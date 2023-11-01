@@ -43,7 +43,7 @@ require "../template/header.php";
                 </div>
               </div>
             </div>
-            <div><h1>titulo</h1></div>
+            
 <?php
 require "../template/footer.php";
 ?>
