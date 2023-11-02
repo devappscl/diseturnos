@@ -48,8 +48,8 @@ if($cerrar_session){
             <div class="card-body">
               <div class="app-brand justify-content-center">
               </div>
-              <h4 class="mb-2">Bienvenidos a Turnodise</h4>
-              <p class="mb-4">Please sign-in to your account and start the adventure</p>
+              <h4 class="mb-2">Bienvenidos a DISE turnos</h4>
+              <p class="mb-4">Por favor ingrese sus credenciales</p>
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label">Usuario</label>
