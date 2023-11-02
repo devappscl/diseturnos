@@ -54,7 +54,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <!-- <span class="app-brand-logo demo"> -->
-                <img src="../../assets/img/favicon/logo.png" class="d-block rounded mb-2" height="50" width="150">
+                <img src="../../assets/img/favicon/campus_los_angeles.png" class="d-block rounded mb-2" height="50" width="150">
               <!-- </span> -->
             </a>
 
@@ -99,7 +99,7 @@
                 <li class="menu-item">
                   <a href="<?= BASE_URL ?>views/modulos/" class="menu-link">
                   <i class='menu-icon tf-icons bx bxs-cabinet' ></i>
-                    <div data-i18n="Modulos">Modulos</div>
+                    <div data-i18n="Modulos">Box de atencion</div>
                   </a>
                 </li>
             <li class="menu-header small text-uppercase">
