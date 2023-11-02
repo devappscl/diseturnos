@@ -155,7 +155,7 @@ $.ajax({
         'accion': 'ObtenerCliente',
         'datos': idcliente
     },
-    url: '/disturnos/models/model_clientes.php',
+    url: '/diseturnos/models/model_clientes.php',
 })
     .then(function (response) {
         var Data = JSON.parse(response);

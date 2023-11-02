@@ -18,7 +18,7 @@ if ($_POST['accion'] == "ListarUsuarios") {
             $activo = "";
             $inactivo = "";
             $editar = "";
-
+            
             if ($arrUsuario[$i]["estado"] == "A") {
                 $arrUsuario[$i]["estado"] = '<span class="badge bg-success">Activo</span>';
                 $inac = 2;
