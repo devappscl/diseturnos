@@ -3,13 +3,13 @@ require "../template/header.php";
 ?>
 <div class="container-xxl flex-grow-1 container-p-y">
               <div class="card mb-4">
-                <h5 class="card-header">Servicios<button type="button" Onclick="modalagregar()" class="btn btn-primary float-right">Agregar Servicio</button></h5>
+                <h5 class="card-header">Especialidad<button type="button" Onclick="modalagregar()" class="btn btn-primary float-right">Agregar especialidad</button></h5>
                 <div class="card-body">
                 <div class="card-datatable table-responsive pt-0">
                 <table class="datatables-basic table border-top" id="TablaServicios">
                         <thead class="thead-light">
                             <tr>
-                                <th>Nombre Servicio</th>
+                                <th>Nombre Especialidad</th>
                                 <th>Color</th>
                                 <th>Icono</th>
                                 <th>Letra</th>
@@ -27,7 +27,7 @@ require "../template/header.php";
                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title" id="modalCenterTitle">Registrar Servicio</h5>
+                                <h5 class="modal-title" id="modalCenterTitle">Registrar especialidad</h5>
                                 <button
                                   type="button"
                                   class="btn-close"
@@ -39,7 +39,7 @@ require "../template/header.php";
                               <form id="registrar_servicios" class="registrar_servicios">
                               <div class="row">
                                   <div class="col-6 mb-2">
-                                    <label class="form-label">Nombre Servicio</label>
+                                    <label class="form-label">Nombre especialidad</label>
                                     <input
                                       type="text"
                                       id="nombreservicio" name="nombreservicio"
