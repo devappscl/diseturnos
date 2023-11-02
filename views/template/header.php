@@ -79,21 +79,21 @@
             <li class="menu-item">
                   <a href="<?= BASE_URL ?>views/clientes/" class="menu-link">
                   <i class='menu-icon tf-icons bx bxs-user'></i>
-                    <div data-i18n="Clientes">Clientes</div>
+                    <div data-i18n="Clientes">Estudiante</div>
                   </a>
                 </li>
                <?php if($_SESSION['nivel'] == '1'){ ?>
 		<li class="menu-item">
                   <a href="<?= BASE_URL ?>views/usuarios/" class="menu-link">
                   <i class='menu-icon tf-icons bx bxs-user-rectangle' ></i>
-                    <div data-i18n="Usuarios">Usuarios</div>
+                    <div data-i18n="Usuarios">funcionario</div>
                   </a>
                 </li>
 		<?php } ?>
                 <li class="menu-item">
                   <a href="<?= BASE_URL ?>views/servicios/" class="menu-link">
                   <i class='menu-icon tf-icons bx bxs-category-alt' ></i>
-                    <div data-i18n="Servicios">Servicios</div>
+                    <div data-i18n="Servicios">Especialidad</div>
                   </a>
                 </li>
                 <li class="menu-item">
