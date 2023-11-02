@@ -26,7 +26,7 @@ if ($_POST['accion'] == "ListarClientes") {
             }
 
             $editar = '<button class="btn btn-icon btn-sm btn-success" onClick="seleccionarCliente(' . $arrCliente[$i]['id'] . ')" title="Editar Cliente"><i class="bx bxs-edit"></i></button>';
-           
+                                                                                                                                                
            
 
             $arrCliente[$i]["opciones"] = '<div class="text-center">' . $editar . ' ' . $activo . ' ' . $inactivo . '</div>';
