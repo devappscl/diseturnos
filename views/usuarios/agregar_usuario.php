@@ -2,7 +2,7 @@
                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title" id="modalCenterTitle">Registrar Usuarios</h5>
+                                <h5 class="modal-title" id="modalCenterTitle">Registrar Funcionario</h5>
                                 <button
                                   type="button"
                                   class="btn-close"
@@ -14,7 +14,7 @@
                               <form id="registrar_usuarios" class="registrar_usuarios">
                               <div class="row">
                                   <div class="col-4 mb-2">
-                                    <label class="form-label">Numero Documento</label>
+                                    <label class="form-label">Numero Run</label>
                                     <input
                                       type="text"
                                       id="numero" name="numero"
@@ -22,7 +22,7 @@
                                     />
                                   </div>
                                   <div class="col-4 mb-2">
-                                    <label class="form-label">Usuario</label>
+                                    <label class="form-label">Funcionario</label>
                                     <input
                                       type="text"
                                       id="usuario" name="usuario"

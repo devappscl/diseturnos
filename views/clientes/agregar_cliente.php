@@ -2,7 +2,7 @@
                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title" id="modalCenterTitle">Registrar Cliente</h5>
+                                <h5 class="modal-title" id="modalCenterTitle">Registrar estudiante</h5>
                                 <button
                                   type="button"
                                   class="btn-close"
@@ -17,9 +17,9 @@
                                 <label class="form-label">Documento</label>
                                 <select id="documento" name="documento" class="form-select">
                                     <option value="" disabled>Seleccionar</option>
-                                    <option value="CC">Cedula de Ciudadania</option>
-                                    <option value="TI">Tarjeta de Identidad</option>
-                                    <option value="RC">Registro Civil</option>
+                                    <option value="CC">Run</option>
+                                    <option value="TI">pasaporte</option>
+                                    
                                 </select>
                                   </div>
                                   <div class="col-6 mb-2">
