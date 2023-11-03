@@ -136,7 +136,7 @@ Usuario.nivel == "" || Usuario.nivel == null || Usuario.nivel == undefined){
 
 function modalagregar() {
 $('#registrar_usuarios')[0].reset();
-document.querySelector(".modal-title").innerHTML = "Agregar Usuario";
+document.querySelector(".modal-title").innerHTML = "Agregar Funcionario";
 document.getElementById("botondeeditar").classList.replace("btn-success", "btn-primary");
 document.querySelector("#btnText").innerHTML = "GUARDAR";
 document.getElementById('botondeeditar').onclick = GuardarUsuario;
@@ -146,7 +146,7 @@ $('#modalAgregarusuario').modal('show');
 }
 
 function seleccionarUsuario(idusuario) {
-document.querySelector(".modal-title").innerHTML = "Actualizar Cliente";
+document.querySelector(".modal-title").innerHTML = "Actualizar funcionariooo";
 document.getElementById("botondeeditar").classList.replace("btn-primary", "btn-success");
 $("#usuario").attr('disabled', 'disabled');
 $("#numero").attr('disabled', 'disabled');
