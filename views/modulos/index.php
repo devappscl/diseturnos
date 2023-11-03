@@ -3,13 +3,13 @@ require "../template/header.php";
 ?>
 <div class="container-xxl flex-grow-1 container-p-y">
               <div class="card mb-4">
-                <h5 class="card-header">Modulos<button type="button" Onclick="modalagregar()" class="btn btn-primary float-right">Agregar Modulo</button></h5>
+                <h5 class="card-header">BOX<button type="button" Onclick="modalagregar()" class="btn btn-primary float-right">Agregar Box</button></h5>
                 <div class="card-body">
                 <div class="card-datatable table-responsive pt-0">
                 <table class="datatables-basic table border-top" id="TablaModulos">
                         <thead class="thead-light">
                             <tr>
-                                <th>Nombre Modulo</th>
+                                <th>Nombre de Box</th>
                                 <th>Estado</th>
                                 <th>Opciones</th>
                             </tr>
@@ -24,7 +24,7 @@ require "../template/header.php";
                           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title" id="modalCenterTitle">Registrar Modulo</h5>
+                                <h5 class="modal-title" id="modalCenterTitle">Registrar Box</h5>
                                 <button
                                   type="button"
                                   class="btn-close"
@@ -36,7 +36,7 @@ require "../template/header.php";
                               <form id="registrar_modulos" class="registrar_modulos">
                               <div class="row">
                                   <div class="col-12 mb-2">
-                                    <label class="form-label">Nombre Modulo</label>
+                                    <label class="form-label">Nombre Box</label>
                                     <input
                                       type="text"
                                       id="nombremodulo" name="nombremodulo"
