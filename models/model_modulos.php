@@ -40,7 +40,31 @@ if ($_POST['accion'] == "ListarModulos") {
 }
 
 
-//termina bloque 1 empieza el 2
+//termina bloque 1 
+//prueba este codigo se PUEDE BORRAR NO ALTERA EL ORIGINAL
+if ($_POST['accion'] == 'EliminarModulo') {
+    $id_modulo = $_POST['datos'];
+    eliminarModulo($id_modulo);
+    
+    die();
+}
+//
+function eliminarModulo($id_modulo) {
+    require_once('../config/conexion.php');
+    try {
+        $stmt = $mysqli->prepare("DELETE FROM db_modulos WHERE id_modulo = ?");
+        $stmt->bind_param('i', $id_modulo);
+        $stmt->execute();
+        $stmt->close();
+        $mysqli->close();
+        echo json_encode(['codigo' => 0, 'respuesta' => 'Módulo eliminado correctamente']);
+    } catch (Exception $e) {
+        echo json_encode(['codigo' => 1, 'respuesta' => 'Error al eliminar el módulo']);
+    }
+}
+
+//fin prueba
+
 if ($_POST['accion'] == 'ObtenerModulo') {
     $id_modulo = $_POST['datos'];
     require_once('../config/conexion.php');
