@@ -13,6 +13,7 @@ if ($_POST['accion'] == "ListarModulos") {
             $activo = "";
             $inactivo = "";
             $editar = "";
+            $eliminar = "";
 
             if ($arrServicio[$i]["estado"] == "A") {
                 $arrServicio[$i]["estado"] = '<span class="badge bg-success">Activo</span>';
@@ -25,10 +26,10 @@ if ($_POST['accion'] == "ListarModulos") {
             }
 
             $editar = '<button class="btn btn-icon btn-sm btn-success" onClick="seleccionarModulo(' . $arrServicio[$i]['id_modulo'] . ')" title="Editar Servicio"><i class="bx bxs-edit"></i></button>';
-           
-           
+            
+            $eliminar = '<button class="btn btn-icon btn-sm btn-danger" onClick="eliminarModulo(' . $arrServicio[$i]['id_modulo'] . ')" title="Eliminar Servicio"><i class="bx bx-trash"></i></button>';
 
-            $arrServicio[$i]["opciones"] = '<div class="text-center">' . $editar . ' ' . $activo . ' ' . $inactivo . '</div>';
+            $arrServicio[$i]["opciones"] = '<div class="text-center">' . $editar . ' ' . $activo . ' ' . $inactivo . ' ' . $eliminar . '</div>';
         }
         $arrResponse["data"] = $arrServicio;
     } else {
@@ -37,6 +38,7 @@ if ($_POST['accion'] == "ListarModulos") {
     echo json_encode($arrResponse);
     die();
 }
+
 
 if ($_POST['accion'] == 'ObtenerModulo') {
     $id_modulo = $_POST['datos'];
