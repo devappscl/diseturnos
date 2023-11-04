@@ -4,7 +4,7 @@ require "../template/header.php";
 
 <div class="container-xxl flex-grow-1 container-p-y">
               <div class="card mb-4">
-                <h5 class="card-header">Inicio sistema Dise Turnos</h5>
+                <h4 class="card-header">Inicio sistema Dise Turnos</h4>
                 <div class="card-body">
                   
                  <div class="row">

@@ -104,8 +104,9 @@
 }
 
 .bg-primary {
-  background-color: #696cff !important;
+  background-color: #003660 !important;
 }
+
 
 a.bg-primary:hover, a.bg-primary:focus {
   background-color: #6467f2 !important;
@@ -205,16 +206,30 @@ button.list-group-item-primary.active {
   color: #435971;
 }
 
+
+.btn-login {
+  color: #fff;
+  background-color: #ff9800;
+  border-color: #ff9800;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(7, 8, 88, 0.4);
+}
+.btn-login:hover {
+  color: #fff;
+  background-color: #cd7b00;
+  border-color: #cd7b00;
+  transform: translateY(-1px);
+}
+
 .btn-primary {
   color: #fff;
-  background-color: #696cff;
-  border-color: #696cff;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
+  background-color: #003660;
+  border-color: #003660;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(7, 8, 88, 0.4);
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #5f61e6;
-  border-color: #5f61e6;
+  background-color: #012540;
+  border-color: #012540;
   transform: translateY(-1px);
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary.focus {
