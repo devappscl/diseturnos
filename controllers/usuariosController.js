@@ -55,6 +55,8 @@ var table = $("#TablaUsuarios").DataTable({
 
 
 
+
+
 function GuardarUsuario() {
 var Usuario = {
     numero:document.getElementsByName('numero')[0].value,
