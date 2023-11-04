@@ -54,7 +54,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <!-- <span class="app-brand-logo demo"> -->
-                <img src="../../assets/img/favicon/campus_los_angeles.png" class="d-block rounded mb-2" height="50" width="150">
+                <img src="../../assets/img/favicon/campus_los_angeles.png" class="d-block rounded mb-2" height="70" width="150">
               <!-- </span> -->
             </a>
 
