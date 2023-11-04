@@ -1,5 +1,5 @@
 <?php
-
+//bloque 1
 if ($_POST['accion'] == "ListarModulos") {
     require_once('../config/conexion.php');
     $query = mysqli_query($mysqli, "SELECT m.id_modulo,m.nombre_modulo,m.estado FROM db_modulos m");
@@ -40,6 +40,7 @@ if ($_POST['accion'] == "ListarModulos") {
 }
 
 
+//termina bloque 1 empieza el 2
 if ($_POST['accion'] == 'ObtenerModulo') {
     $id_modulo = $_POST['datos'];
     require_once('../config/conexion.php');
