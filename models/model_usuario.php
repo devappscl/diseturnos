@@ -256,3 +256,5 @@ if ($_POST['accion'] == 'VerNiveles') {
          
             die();
 }
+
+

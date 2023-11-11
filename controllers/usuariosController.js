@@ -319,7 +319,7 @@ function ListadoServicios() {
       var datos = JSON.parse(response);
       if (datos.status == true) {
           for (var i = 0; i < datos.data.length; i++) {
-              document.getElementById("servicio").innerHTML += "<option value='" + datos.data[i].id_servicio + "'>" + datos.data[i].nombre_servicio + "</option>";
+              document.getElementById("servicio").innerHTML += "<option value='" + datos.data[i].id + "'>" + datos.data[i].nombre_servicio + "</option>";
 
           }
       }

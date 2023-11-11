@@ -1,10 +1,10 @@
 $(document).ready(function() {
     setInterval(function() {
         Fechayhoraactual();
-    }, 1000);
+    }, 500);
     setInterval(function() {
         TurosGestion();
-    }, 9500);
+    }, 1500);
   });
 
   
