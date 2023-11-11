@@ -40,16 +40,17 @@ if($cerrar_session){
     <link rel="stylesheet" href="assets/vendor/css/pages/page-auth.css" />
     <link rel="stylesheet" href="assets/css/sweetalert2.min.css"/>
   </head>
-  <body>
+  <body class="bg-primary">
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner">
           <div class="card">
             <div class="card-body">
               <div class="app-brand justify-content-center">
+              <img src="assets/img/favicon/campus_los_angeles.png" class="d-block rounded mb-2 mx-auto" height="100" width="170">
               </div>
-              <h4 class="mb-2">Bienvenidos a DISE turnos</h4>
-              <p class="mb-4">Por favor ingrese sus credenciales</p>
+              <h4 class="mb-4 text-center">Bienvenidos a DISE turnos</h4>
+              <p class="mb-2">Por favor ingrese sus credenciales</p>
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label">Usuario</label>
@@ -76,7 +77,7 @@ if($cerrar_session){
                   </div>
                 </div>
                 <div class="mb-3">
-                  <button class="btn btn-primary d-grid w-100" type="button" OnClick="Login()">Iniciar Session</button>
+                  <button class="btn btn-login d-grid w-100" type="button" OnClick="Login()">Iniciar Sesión</button>
                 </div>
               </form>
             </div>

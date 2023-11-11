@@ -279,3 +279,5 @@ Swal.fire({
     }
 })
 }
+
+//prueba de funcion eliminarModulo (BOX)

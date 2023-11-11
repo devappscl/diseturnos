@@ -1,5 +1,5 @@
 <?php
-
+//bloque 1
 if ($_POST['accion'] == "ListarModulos") {
     require_once('../config/conexion.php');
     $query = mysqli_query($mysqli, "SELECT m.id_modulo,m.nombre_modulo,m.estado FROM db_modulos m");
@@ -13,6 +13,7 @@ if ($_POST['accion'] == "ListarModulos") {
             $activo = "";
             $inactivo = "";
             $editar = "";
+            $eliminar = "";
 
             if ($arrServicio[$i]["estado"] == "A") {
                 $arrServicio[$i]["estado"] = '<span class="badge bg-success">Activo</span>';
@@ -25,10 +26,10 @@ if ($_POST['accion'] == "ListarModulos") {
             }
 
             $editar = '<button class="btn btn-icon btn-sm btn-success" onClick="seleccionarModulo(' . $arrServicio[$i]['id_modulo'] . ')" title="Editar Servicio"><i class="bx bxs-edit"></i></button>';
-           
-           
+            
+            $eliminar = '<button class="btn btn-icon btn-sm btn-danger" onClick="eliminarModulo(' . $arrServicio[$i]['id_modulo'] . ')" title="Eliminar Servicio"><i class="bx bx-trash"></i></button>';
 
-            $arrServicio[$i]["opciones"] = '<div class="text-center">' . $editar . ' ' . $activo . ' ' . $inactivo . '</div>';
+            $arrServicio[$i]["opciones"] = '<div class="text-center">' . $editar . ' ' . $activo . ' ' . $inactivo . ' ' . $eliminar . '</div>';
         }
         $arrResponse["data"] = $arrServicio;
     } else {
@@ -37,6 +38,32 @@ if ($_POST['accion'] == "ListarModulos") {
     echo json_encode($arrResponse);
     die();
 }
+
+
+//termina bloque 1 
+//prueba este codigo se PUEDE BORRAR NO ALTERA EL ORIGINAL
+if ($_POST['accion'] == 'EliminarModulo') {
+    $id_modulo = $_POST['datos'];
+    eliminarModulo($id_modulo);
+    
+    die();
+}
+//
+function eliminarModulo($id_modulo) {
+    require_once('../config/conexion.php');
+    try {
+        $stmt = $mysqli->prepare("DELETE FROM db_modulos WHERE id_modulo = ?");
+        $stmt->bind_param('i', $id_modulo);
+        $stmt->execute();
+        $stmt->close();
+        $mysqli->close();
+        echo json_encode(['codigo' => 0, 'respuesta' => 'Módulo eliminado correctamente']);
+    } catch (Exception $e) {
+        echo json_encode(['codigo' => 1, 'respuesta' => 'Error al eliminar el módulo']);
+    }
+}
+
+//fin prueba
 
 if ($_POST['accion'] == 'ObtenerModulo') {
     $id_modulo = $_POST['datos'];
