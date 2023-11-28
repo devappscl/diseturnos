@@ -17,8 +17,8 @@
                                 <label class="form-label">Documento</label>
                                 <select id="documento" name="documento" class="form-select">
                                     <option value="" disabled>Seleccionar</option>
-                                    <option value="CC">Run</option>
-                                    <option value="TI">pasaporte</option>
+                                    <option value="Run">Run</option>
+                                    <option value="Pasaporte">Pasaporte</option>
                                     
                                 </select>
                                   </div>

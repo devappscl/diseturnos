@@ -11,9 +11,8 @@ require "../template/header.php";
       <div class="col-4">
           <select id="tipodocumento" name="tipodocumento" class="form-select">
             <option value="" readonly>Seleccionar Tipo Documento</option>
-            <option value="CC">Cedula de Ciudadania</option>
-            <option value="TI">Tarjeta de Identidad</option>
-            <option value="RC">Registro Civil</option>
+            <option value="Run">Run</option>
+            <option value="Pasaporte">Pasaporte</option>
           </select>
         </div>
         <div class="col-4">
@@ -29,9 +28,8 @@ require "../template/header.php";
           <label class="form-label">Documento</label>
           <select id="documento" name="documento" class="form-select">
             <option value="" disabled>Seleccionar</option>
-            <option value="CC">Cedula de Ciudadania</option>
-            <option value="TI">Tarjeta de Identidad</option>
-            <option value="RC">Registro Civil</option>
+            <option value="Run">Run</option>
+            <option value="Pasaporte">Pasaporte</option>
           </select>
         </div>
         <div class="col-6 mb-2">
